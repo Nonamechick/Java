@@ -3570,6 +3570,6 @@ class Problem {
         }
         System.out.println("Answer: " + (rows * cols));
 
-        scanner.close();
+        // scanner.close();
     }
 }        
