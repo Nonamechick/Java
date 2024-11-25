@@ -10,7 +10,7 @@ public class Conditionals {
         int myNum = 10;
         int myAge = 25;
         int votingAge = 18;
-        int notmyNum = 5;
+        // int notmyNum = 5;
 
 
 

@@ -534,21 +534,22 @@ class BooleanProblems {
         // }
 
         // Boolean 40
-        // Scanner scanner = new Scanner(System.in);
-        // System.out.print("Input ");
-        // int x1 = scanner.nextInt();
-        // int y1 = scanner.nextInt();
-        // System.out.print("Input ");
-        // int x2 = scanner.nextInt();
-        // int y2 = scanner.nextInt();
-        // boolean can = (Math.abs(x2 - x1) == 2 && Math.abs(y2 - y1) == 1) || (Math.abs(x2 - x1) == 1 && Math.abs(y2 - y1) == 2);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input ");
+        int x1 = scanner.nextInt();
+        int y1 = scanner.nextInt();
+        System.out.print("Input ");
+        int x2 = scanner.nextInt();
+        int y2 = scanner.nextInt();
+        boolean can = (Math.abs(x2 - x1) == 2 && Math.abs(y2 - y1) == 1) || (Math.abs(x2 - x1) == 1 && Math.abs(y2 - y1) == 2);
 
 
-        // // print
-        // if (can) {
-        //     System.out.println("can move  (" + x1 + ", " + y1 + ")  (" + x2 + ", " + y2 + ")");
-        // } else {
-        //     System.out.println("cannot move (" + x1 + ", " + y1 + ")  (" + x2 + ", " + y2 + ") ");
-        // }
+        // print
+        if (can) {
+            System.out.println("can move  (" + x1 + ", " + y1 + ")  (" + x2 + ", " + y2 + ")");
+        } else {
+            System.out.println("cannot move (" + x1 + ", " + y1 + ")  (" + x2 + ", " + y2 + ") ");
+        }
+        scanner.close();
     }
 }

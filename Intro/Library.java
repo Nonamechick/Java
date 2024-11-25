@@ -223,5 +223,6 @@ public class Library {
         
         System.out.println("Diameter of the circle D: " + D);
         System.out.println("Length of the circumference L: " + L);
+        input.close();
     }
 }

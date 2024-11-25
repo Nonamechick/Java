@@ -421,29 +421,30 @@ class BeginProblems {
         // } 
 
         // Begin 40
-        // Scanner input = new Scanner(System.in);
-        // System.out.println("Enter coefficient A1: ");
-        // double A1 = input.nextDouble();
-        // System.out.println("Enter coefficient B1: ");
-        // double B1 = input.nextDouble();
-        // System.out.println("Enter coefficient C1: ");
-        // double C1 = input.nextDouble();
-        // System.out.println("Enter coefficient A2: ");
-        // double A2 = input.nextDouble();
-        // System.out.println("Enter coefficient B2: ");
-        // double B2 = input.nextDouble();
-        // System.out.println("Enter coefficient C2: ");
-        // double C2 = input.nextDouble();
-        // double D = (A1 * B2) - (A2 * B1);
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter coefficient A1: ");
+        double A1 = input.nextDouble();
+        System.out.println("Enter coefficient B1: ");
+        double B1 = input.nextDouble();
+        System.out.println("Enter coefficient C1: ");
+        double C1 = input.nextDouble();
+        System.out.println("Enter coefficient A2: ");
+        double A2 = input.nextDouble();
+        System.out.println("Enter coefficient B2: ");
+        double B2 = input.nextDouble();
+        System.out.println("Enter coefficient C2: ");
+        double C2 = input.nextDouble();
+        double D = (A1 * B2) - (A2 * B1);
         
-        // if (D != 0) {
-        //     double x = (C1 * B2 - C2 * B1) / D;
-        //     double y = (A1 * C2 - A2 * C1) / D;
-        //     System.out.println("The solution to the system is:");
-        //     System.out.println("x = " + x);
-        //     System.out.println("y = " + y);
-        // } else {
-        //     System.out.println("The system has no unique solution (D = 0).");
-        // }
+        if (D != 0) {
+            double x = (C1 * B2 - C2 * B1) / D;
+            double y = (A1 * C2 - A2 * C1) / D;
+            System.out.println("The solution to the system is:");
+            System.out.println("x = " + x);
+            System.out.println("y = " + y);
+        } else {
+            System.out.println("The system has no unique solution (D = 0).");
+        }
+        input.close();
     }
 }

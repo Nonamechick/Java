@@ -360,5 +360,6 @@ class IntProblems {
 
         // print
         System.out.println("Answer "+H+ "th centure");
+        input.close();
     }
 }

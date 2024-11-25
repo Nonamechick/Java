@@ -554,18 +554,18 @@ class ForProblems {
         // sc.close();
 
         // For 40
-        // Scanner scanner = new Scanner(System.in);
-        // System.out.print("Input : ");
-        // int A = scanner.nextInt();
-        // int B = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input : ");
+        int A = scanner.nextInt();
+        int B = scanner.nextInt();
 
-        // for (int i = A; i <= B; i++) {
-        //     for (int j = 0; j < (i - A + 1); j++) {
-        //         System.out.print(i + " ");
-        //     }
-        //     System.out.println();  
-        // }
+        for (int i = A; i <= B; i++) {
+            for (int j = 0; j < (i - A + 1); j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();  
+        }
         
-        // scanner.close();
+        scanner.close();
     }
 }

@@ -543,28 +543,29 @@ class IfProblems {
         // System.out.println("Answer: " + desc);
 
         // if 30
-        // Scanner sc = new Scanner(System.in);
-        // System.out.print("Input: ");
-        // int number = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input: ");
+        int number = sc.nextInt();
 
 
-        // String desc;
-        // if (number < 10) {
-        //     desc = "one-digit ";
-        // } else if (number < 100) {
-        //     desc = "two-digit ";
-        // } else {
-        //     desc = "three-digit ";
-        // }
+        String desc;
+        if (number < 10) {
+            desc = "one-digit ";
+        } else if (number < 100) {
+            desc = "two-digit ";
+        } else {
+            desc = "three-digit ";
+        }
 
         
-        // if (number % 2 == 0) {
-        //     desc += "even ";
-        // } else {
-        //     desc += "odd ";
-        // }
+        if (number % 2 == 0) {
+            desc += "even ";
+        } else {
+            desc += "odd ";
+        }
 
-        // // print
-        // System.out.println("Answer: " + desc);
+        // print
+        System.out.println("Answer: " + desc);
+        sc.close();
     }
 }
