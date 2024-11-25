@@ -468,28 +468,30 @@ class SwitchProblems {
         // }
 
         // case 15
-        // Scanner scanner = new Scanner(System.in);
-        // System.out.print("Input first order after card number ");
-        // int num = scanner.nextInt();
-        // int c = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input first order after card number ");
+        int num = scanner.nextInt();
+        int c = scanner.nextInt();
 
-        // switch (num) {
-        //     case 1:
-        //         System.out.println(c+" of spades");
-        //         break;
-        //     case 2:
-        //         System.out.println(c+" of clubs");
-        //         break;
-        //     case 3:
-        //         System.out.println(c+" of diamonds");
-        //         break;
-        //     case 4:
-        //         System.out.println(c+" of hearts");
-        //         break;
-        //     default:
-        //         System.out.println("Incorrect value between 6-14");
-        //         break;
-        // }
+        switch (num) {
+            case 1:
+                System.out.println(c+" of spades");
+                break;
+            case 2:
+                System.out.println(c+" of clubs");
+                break;
+            case 3:
+                System.out.println(c+" of diamonds");
+                break;
+            case 4:
+                System.out.println(c+" of hearts");
+                break;
+            default:
+                System.out.println("Incorrect value between 6-14");
+                break;
+        }
+
+        scanner.close();
         // case 16
         // Scanner scanner = new Scanner(System.in);
         // System.out.print("Input  ");
