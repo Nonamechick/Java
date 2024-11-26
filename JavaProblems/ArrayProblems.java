@@ -1,3 +1,5 @@
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 
@@ -652,23 +654,379 @@ class ArrayProblems {
         // scanner.close();
 
         // Array 35
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("Input");
+        // int N = scanner.nextInt();
+        // double[] A = new double[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextDouble();
+        // }
+
+        // double minLocalMax = Double.MAX_VALUE;
+        // for (int i = 1; i < N - 1; i++) {
+        //     if (A[i] > A[i - 1] && A[i] > A[i + 1]) {
+        //         minLocalMax = Math.min(minLocalMax, A[i]);
+        //     }
+        // }
+
+        // System.out.println("Result: " + minLocalMax);
+        // scanner.close();
+
+        // Array 36
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // double[] A = new double[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextDouble();
+        // }
+
+        // double max = 0;
+        // boolean found = false;
+        // for (int i = 0; i < N; i++) {
+        //     if ((i == 0 || A[i] <= A[i - 1]) && (i == N - 1 || A[i] <= A[i + 1])) {
+        //         max = Math.max(max, A[i]);
+        //         found = true;
+        //     }
+        // }
+
+        // System.out.println("Result: " + (found ? max : 0));
+        // scanner.close();
+
+        // Array 37
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // double[] A = new double[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextDouble();
+        // }
+
+        // int count = 0;
+        // boolean inAscending = false;
+
+        // for (int i = 1; i < N; i++) {
+        //     if (A[i] > A[i - 1]) {
+        //         if (!inAscending) {
+        //             count++;
+        //             inAscending = true;
+        //         }
+        //     } else {
+        //         inAscending = false;
+        //     }
+        // }
+
+        // System.out.println("Result: " + count);
+        // scanner.close();
+
+        // Array 38
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // double[] A = new double[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextDouble();
+        // }
+
+        // int count = 0;
+        // boolean inDescending = false;
+
+        // for (int i = 1; i < N; i++) {
+        //     if (A[i] < A[i - 1]) {
+        //         if (!inDescending) {
+        //             count++;
+        //             inDescending = true;
+        //         }
+        //     } else {
+        //         inDescending = false;
+        //     }
+        // }
+
+        // System.out.println("Result: " + count);
+        // scanner.close();
+
+        // Array 39
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // double[] A = new double[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextDouble();
+        // }
+
+        // int count = 0;
+        // boolean inMonotonic = false;
+
+        // for (int i = 1; i < N; i++) {
+        //     if (A[i] != A[i - 1]) {
+        //         if (!inMonotonic) {
+        //             count++;
+        //             inMonotonic = true;
+        //         }
+        //     } else {
+        //         inMonotonic = false;
+        //     }
+        // }
+
+        // System.out.println("Result: " + count);
+        // scanner.close();
+
+        // Array 40
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // double[] A = new double[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextDouble();
+        // }
+
+        // double R = scanner.nextDouble();
+
+        // double minDifference = Double.MAX_VALUE;
+        // double nearestElement = 0;
+
+        // for (double value : A) {
+        //     double diff = Math.abs(value - R);
+        //     if (diff < minDifference) {
+        //         minDifference = diff;
+        //         nearestElement = value;
+        //     }
+        // }
+
+        // System.out.println("Result: " + nearestElement);
+        // scanner.close();
+
+        // Array 41
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // double[] A = new double[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextDouble();
+        // }
+
+        // double maxSum = Double.MIN_VALUE;
+        // int index = 0;
+
+        // for (int i = 0; i < N - 1; i++) {
+        //     double sum = A[i] + A[i + 1];
+        //     if (sum > maxSum) {
+        //         maxSum = sum;
+        //         index = i;
+        //     }
+        // }
+
+        // System.out.println("Result: " + A[index] + ", " + A[index + 1]);
+        // scanner.close();
+
+        // Array 42
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // double[] A = new double[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextDouble();
+        // }
+
+        // double R = scanner.nextDouble();
+
+        // double minDifference = Double.MAX_VALUE;
+        // int index = 0;
+
+        // for (int i = 0; i < N - 1; i++) {
+        //     double sum = A[i] + A[i + 1];
+        //     double diff = Math.abs(sum - R);
+        //     if (diff < minDifference) {
+        //         minDifference = diff;
+        //         index = i;
+        //     }
+        // }
+
+        // System.out.println("Result: " + A[index] + ", " + A[index + 1]);
+        // scanner.close();
+
+        // Array 43
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // int[] A = new int[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextInt();
+        // }
+
+        // HashSet<Integer> distinctElements = new HashSet<>();
+        // for (int value : A) {
+        //     distinctElements.add(value);
+        // }
+
+        // System.out.println("Result: " + distinctElements.size());
+        // scanner.close();
+
+        // Array 44
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // int[] A = new int[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextInt();
+        // }
+
+        // boolean found = false;
+        // for (int i = 0; i < N - 1; i++) {
+        //     for (int j = i + 1; j < N; j++) {
+        //         if (A[i] == A[j]) {
+        //             System.out.println("Result: " + (i + 1) + ", " + (j + 1));
+        //             found = true;
+        //             break;
+        //         }
+        //     }
+        //     if (found) break;
+        // }
+
+        // if (!found) {
+        //     System.out.println("No duplicates ");
+        // }
+        // scanner.close();
+
+        // Array 45
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // double[] A = new double[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextDouble();
+        // }
+
+        // double minDifference = Double.MAX_VALUE;
+        // int index1 = 0, index2 = 0;
+
+        // for (int i = 0; i < N - 1; i++) {
+        //     for (int j = i + 1; j < N; j++) {
+        //         double diff = Math.abs(A[i] - A[j]);
+        //         if (diff < minDifference) {
+        //             minDifference = diff;
+        //             index1 = i;
+        //             index2 = j;
+        //         }
+        //     }
+        // }
+
+        // System.out.println(" Result: " + (index1 + 1) + ", " + (index2 + 1));
+        // scanner.close();
+
+        // Array 46
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // double[] A = new double[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextDouble();
+        // }
+
+        // double R = scanner.nextDouble();
+
+        // double minDifference = Double.MAX_VALUE;
+        // int index1 = 0, index2 = 0;
+
+        // for (int i = 0; i < N - 1; i++) {
+        //     for (int j = i + 1; j < N; j++) {
+        //         double sum = A[i] + A[j];
+        //         double diff = Math.abs(sum - R);
+        //         if (diff < minDifference) {
+        //             minDifference = diff;
+        //             index1 = i;
+        //             index2 = j;
+        //         }
+        //     }
+        // }
+
+        // System.out.println("Result: " + A[index1] + " (index: " + (index1 + 1) + "), " + A[index2] + " (index: " + (index2 + 1) + ")");
+        // scanner.close();
+
+        // Array 47
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // int[] A = new int[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextInt();
+        // }
+
+        // HashSet<Integer> distinctValues = new HashSet<>();
+        // for (int value : A) {
+        //     distinctValues.add(value);
+        // }
+
+        // System.out.println("Result: " + distinctValues.size());
+        // scanner.close();
+
+        // Array 48
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // int[] A = new int[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextInt();
+        // }
+
+        // HashMap<Integer, Integer> frequencyMap = new HashMap<>();
+        // for (int value : A) {
+        //     frequencyMap.put(value, frequencyMap.getOrDefault(value, 0) + 1);
+        // }
+
+        // int maxFrequency = 0;
+        // for (int freq : frequencyMap.values()) {
+        //     if (freq > maxFrequency) {
+        //         maxFrequency = freq;
+        //     }
+        // }
+
+        // System.out.println("Result: " + maxFrequency);
+        // scanner.close();
+
+        // Array 49
+        // Scanner scanner = new Scanner(System.in);
+        // int N = scanner.nextInt();
+        // int[] A = new int[N];
+
+        // for (int i = 0; i < N; i++) {
+        //     A[i] = scanner.nextInt();
+        // }
+
+        // boolean[] isPresent = new boolean[N + 1];
+
+        // for (int value : A) {
+        //     if (value < 1 || value > N || isPresent[value]) {
+        //         System.out.println("Result: " + value);
+        //         return;
+        //     }
+        //     isPresent[value] = true;
+        // }
+
+        // System.out.println("Result: 0"); 
+        // scanner.close();
+
+        // Array 50
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Input");
         int N = scanner.nextInt();
-        double[] A = new double[N];
+        int[] A = new int[N];
 
         for (int i = 0; i < N; i++) {
-            A[i] = scanner.nextDouble();
+            A[i] = scanner.nextInt();
         }
 
-        double minLocalMax = Double.MAX_VALUE;
-        for (int i = 1; i < N - 1; i++) {
-            if (A[i] > A[i - 1] && A[i] > A[i + 1]) {
-                minLocalMax = Math.min(minLocalMax, A[i]);
+        int inversions = 0;
+
+        for (int i = 0; i < N - 1; i++) {
+            for (int j = i + 1; j < N; j++) {
+                if (A[i] > A[j]) {
+                    inversions++;
+                }
             }
         }
 
-        System.out.println("Result: " + minLocalMax);
+        System.out.println("Result: " + inversions);
         scanner.close();
     }
 }        
