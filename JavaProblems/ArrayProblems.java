@@ -653,7 +653,7 @@ class ArrayProblems {
 
         // Array 35
         Scanner scanner = new Scanner(System.in);
-        System.out.println("INPUT");
+        System.out.println("Input");
         int N = scanner.nextInt();
         double[] A = new double[N];
 
